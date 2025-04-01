@@ -1,0 +1,7 @@
+Endpoint dos contatos de um usuário:
+http://localhost:8080/v1/whatsapp/contatosUsuario/11966578996
+
+
+
+Endpoint das conversas de um usuário:
+http://localhost:8080/v1/whatsapp/conversasUsuario/11966578996

@@ -1,0 +1,132 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.barraLateral {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    align-items: center;
+    background-color: blueviolet;
+}
+
+.headerBarraLateral {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.headerBarraLateral h1 {
+    color: white;
+}
+
+.headerBarraLateral .icons-Header-BarraLateral {
+    display: flex;
+    gap: 2rem;
+}
+
+.inputPesquisa {
+    position: relative;
+    width: 100%;
+    height: 2.5rem;
+}
+
+.inputPesquisa input {
+    width: 99%;
+    height: 100%;
+    padding-left: 4rem;
+    border-radius: 50px;
+}
+
+.inputPesquisa img {
+    position: absolute;
+    height: 2rem;
+    left: 0;
+    transform: translateY(15%);
+    margin-left: 1.5rem;
+}
+
+.botoesBarraLateral {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+    height: 2.5rem;
+    padding: 0.2rem;
+}
+
+.botoesBarraLateral button {
+    height: 85%;
+    border: none;
+    padding: 0rem 1rem 0rem 1rem;
+    border-radius: 50px;
+}
+
+.listaContatos {
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.contato {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.contato .dadosContato {
+    display: flex;
+}
+
+.contato img {
+    border-radius: 50px;
+    margin-right: 1rem;
+}
+
+.contato h2 {
+    color: white;
+}
+
+.contato h3 {
+    color: white;
+    font-weight: 500;
+}
+
+.main {
+    height: 100%;
+    width: 70%;
+}
+
+.main .headerMain {
+    width: 100%;
+    background-color: aqua;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main .headerMain .contatoConversa {
+    display: flex;
+    padding: 0.5rem;
+    align-items: center;
+    gap: 1rem;
+    flex-grow: 1;
+}
+
+.main .botoesHeader {
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    gap: 1rem;
+    padding: 0.5rem;
+}
