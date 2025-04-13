@@ -67,30 +67,14 @@ const getContatosUsuario = function(filtroUsuario){
     contador = 0
     let status = false 
     let dadosBusca = listaZAP.contatos['whats-users']
-    guardarDadosUsuario = []
     let guardarContatos = []
     let guardarDadosContatos = []
-    let guardarTudo = []
     let filtroUsuarioLocal = filtroUsuario
 
     while (contador < dadosBusca.length){
         if (filtroUsuarioLocal == dadosBusca[contador].number){
-            
-            guardarDadosUsuario.push(
-                {
-                    ID: dadosBusca[contador].id,
-                    Conta: dadosBusca[contador].account,
-                    Criação: dadosBusca[contador]['created-since'],
-                    Numero: dadosBusca[contador].number,
-
-                    Apelido: dadosBusca[contador].nickname,
-                    FotoPerfil: dadosBusca[contador]['profile-image'],
-                    Numero: dadosBusca[contador].number,
-                    TelaFundo: dadosBusca[contador].background
-                }
-            )
-
             status = true
+
             guardarContatos = dadosBusca[contador].contacts;
             break;
         }
@@ -107,13 +91,8 @@ const getContatosUsuario = function(filtroUsuario){
         contadorContatos ++
     }
 
-    guardarTudo.push(
-        guardarDadosUsuario,
-        guardarDadosContatos
-    )
-
     if (status == true){
-        return guardarTudo
+        return guardarDadosContatos
     }else {
         return status
     }
