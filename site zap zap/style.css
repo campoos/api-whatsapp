@@ -16,7 +16,7 @@ body {
     height: 100%;
     display: flex;
     flex-direction: column;
-    padding: 0.5rem;
+    padding: 0.2rem;
     align-items: center;
     background-color: #111B21;
 }
@@ -39,6 +39,11 @@ body {
     gap: 2rem;
 }
 
+.headerBarraLateral .icons-Header-BarraLateral img {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
 .inputPesquisa {
     position: relative;
     width: 100%;
@@ -53,13 +58,23 @@ body {
     border: none;
     font-size: 1rem;
     background-color: #202C33;
+    color: white;
+}
+
+.inputPesquisa input:focus {
+    border: none;
+    outline: none;
+}
+
+.inputPesquisa input:focus::placeholder {
+    color: transparent;
 }
 
 .inputPesquisa img {
     position: absolute;
-    height: 2rem;
+    height: 1.5rem;
     left: 0;
-    transform: translateY(15%);
+    transform: translateY(35%);
     margin-left: 1rem;
 }
 
@@ -128,7 +143,7 @@ body {
 .contato .dadosContato .textoContato h2{
     width: 100%;
     font-weight: 400;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     text-align: start;
 }
 
@@ -141,7 +156,7 @@ body {
 .contato img {
     border-radius: 50px;
     margin-right: 1rem;
-    height: 4rem;
+    height: 3rem;
 }
 
 .contato h2 {
@@ -159,11 +174,17 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    background-image: url("../img/background.png");
+    background-position: center;
+    background-size: 50%;
+    background-repeat: repeat;
+    
 }
 
 .main .headerMain {
     width: 100%;
-    height: 6rem;
+    height: 4.5rem;
     background-color: #202C33;
     display: flex;
     justify-content: space-between;
@@ -179,14 +200,14 @@ body {
 
 .main .headerMain .contatoConversa img {
     border-radius: 50%;
-    height: 4rem;
+    height: 3rem;
     margin-left: 0.5rem;
 }
 
 .main .headerMain .contatoConversa h1 {
     color: white;
-    font-size: 1.5rem;
-    font-weight: 700;
+    font-size: 1.2rem;
+    font-weight: 500;
 }
 
 .main .botoesHeader {
@@ -194,55 +215,61 @@ body {
     display: flex;
     align-items: center;
     justify-content: end;
-    gap: 1.5rem;
+    gap: 2.5rem;
     margin: 0.5rem;
     margin-right: 2rem;
     flex-grow: 1;
 }
 
 .main .botoesHeader img {
-    height: 3rem;
+    height: 1.5rem;
 }
 
 .main .footerMain {
-    background-color: paleturquoise;
+    background-color: #202C33;
     display: flex;
     width: 100%;
-    height: 5rem;
+    height: 4.5rem;
     padding: 0.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
     justify-content: space-between;
     align-items: center;
 }
 
 .main .footerMain img {
-    height: 3rem;
+    height: 2rem;
 }
 
 .main .footerMain .inputMensagem {
     flex-grow: 1;
-    height: 3.5rem;
+    height: 3.3rem;
     position: relative;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
     
 }
 
 .main .footerMain .inputMensagem img{
     position: absolute;
     left: 0;
-    top: 5%;
+    top: 20%;
     margin-left: 1rem;
-    height: 3rem;
+    height: 2rem;
 }
-
-
 
 .main .footerMain .inputMensagem input{
     width: 100%;
     height: 100%;
-    padding-left: 5rem;
-    font-size: 1.5rem;
+    padding-left: 4rem;
+    font-size: 1.2rem;
+    font-weight: 400;
     border-radius: 10px;
     border: none;
+    color: white;
+    background-color: #2A3942;
 }
 
+.main .footerMain .inputMensagem input:focus {
+    outline: none;
+}
