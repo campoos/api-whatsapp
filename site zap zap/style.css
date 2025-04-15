@@ -107,6 +107,7 @@ body {
 
 .contato {
     margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
     display: flex;
     justify-content: space-between;
     padding: 0.5rem;
@@ -119,11 +120,9 @@ body {
 }
 
 .listaContatos hr {
-    height: 0.5px; /* Deixa a linha mais fina */
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-    background-color: rgba(81, 89, 94, 0.5); /* Cor com transparência (50% de opacidade) */
-    color: transparent; /* A cor do texto dentro do <hr> será transparente */
+    height: 0.5px; 
+    background-color: rgba(81, 89, 94, 0.5);
+    color: transparent; 
     margin-left: 5rem;
     border: none;
 }
@@ -132,11 +131,15 @@ body {
     display: flex;
 }
 
+.contato span {
+    color: #A8B4BB;
+    font-size: 0.8rem;
+}
+
 .contato .dadosContato .textoContato{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     text-align: start;
 }
 
@@ -145,12 +148,22 @@ body {
     font-weight: 400;
     font-size: 1.2rem;
     text-align: start;
+    margin-bottom: 0.4rem;
 }
 
 .contato .dadosContato .textoContato h3{
     font-weight: 200;
     font-size: 1rem;
     color: #A8B4BB;
+
+    display: -webkit-box;        
+    -webkit-line-clamp: 1;        
+    -webkit-box-orient: vertical;  
+    line-clamp: 1;            
+    overflow: hidden;              
+    text-overflow: ellipsis;      
+    max-width: 100%;              
+    white-space: normal;       
 }
 
 .contato img {
@@ -225,6 +238,68 @@ body {
     height: 1.5rem;
 }
 
+.main .conversaContato {
+    width: 100%;
+    flex-grow: 1;
+}
+
+.main .conversaContato .mensagem-enviada {
+    margin: 2rem;
+    display: flex;
+    justify-content: end;
+}
+
+.main .conversaContato .mensagem-enviada .conteudoMensagem {
+    background-color: #005C4B;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 10px;
+    width: fit-content;
+    display: flex;
+}
+
+.main .conversaContato .mensagem-enviada .conteudoMensagem p {
+    font-size: 1rem;
+    margin: 0.2rem 0.5rem;
+}
+
+.main .conversaContato .mensagem-enviada .conteudoMensagem time {
+    font-size: 0.75rem;
+    margin: 0.2rem 0.5rem;
+    margin-top: 0.8rem;
+    color: #A8B4BB;
+}
+
+
+
+
+
+.main .conversaContato .mensagem-recebida {
+    margin: 2rem;
+    display: flex;
+}
+
+.main .conversaContato .mensagem-recebida .conteudoMensagem {
+    background-color: #202C33;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 10px;
+    width: fit-content;
+    display: flex;
+}
+
+.main .conversaContato .mensagem-recebida .conteudoMensagem p {
+    font-size: 1rem;
+    margin: 0.2rem 0.5rem;
+}
+
+.main .conversaContato .mensagem-recebida .conteudoMensagem time {
+    font-size: 0.75rem;
+    margin: 0.2rem 0.5rem;
+    margin-top: 0.8rem;
+    color: #A8B4BB;
+}
+
 .main .footerMain {
     background-color: #202C33;
     display: flex;
@@ -272,4 +347,13 @@ body {
 
 .main .footerMain .inputMensagem input:focus {
     outline: none;
+}
+
+
+.contato.selecionado {
+    background-color: #2A3942;
+    border-radius: 8px;
+    transition: background-color 0.2s ease;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 }
